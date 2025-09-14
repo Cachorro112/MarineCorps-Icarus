@@ -548,7 +548,8 @@
 		list("Shoulder Holster", 10, /obj/item/clothing/accessory/storage/holster, VENDOR_ITEM_REGULAR),
 
 		list("ARMOR", -1, null, null),
-		list("Tactical Helmet", round(scale * 15), /obj/item/clothing/head/helmet/marine/veteran/pmc, VENDOR_ITEM_REGULAR),
+		list("'Azul' Tactical Helmet", round(scale * 15), /obj/item/clothing/head/helmet/marine/veteran/pmc/brazil, VENDOR_ITEM_REGULAR),
+		list("'Selva' Tactical Helmet", round(scale * 15), /obj/item/clothing/head/helmet/marine/veteran/pmc/brazil/green, VENDOR_ITEM_REGULAR),
 		list("'Selva' Tactical Armor", round(scale * 15), /obj/item/clothing/suit/storage/marine/veteran/pmc/brazil, VENDOR_ITEM_REGULAR),
 		list("'Selva' Tactical Light Armor", round(scale * 10), /obj/item/clothing/suit/storage/marine/veteran/pmc/light/brazil, VENDOR_ITEM_REGULAR),
 
@@ -1150,7 +1151,8 @@
 		list("M56 Head Mounted Sight", 15, /obj/item/clothing/glasses/night/m56_goggles, null, VENDOR_ITEM_REGULAR),
 
 		list("ARMOR", -1, null, null),
-		list("Gunner Helmet", round(scale * 10), /obj/item/clothing/head/helmet/marine/veteran/pmc/gunner, VENDOR_ITEM_REGULAR),
+		list("'Azul' Gunner Helmet", round(scale * 15), /obj/item/clothing/head/helmet/marine/veteran/pmc/gunner/brazil, VENDOR_ITEM_REGULAR),
+		list("'Selva' Gunner Helmet", round(scale * 15), /obj/item/clothing/head/helmet/marine/veteran/pmc/gunner/brazil/green, VENDOR_ITEM_REGULAR),
 		list("'Selva' Gunner Armor", round(scale * 10), /obj/item/clothing/suit/storage/marine/smartgunner/veteran/pmc/brazil, VENDOR_ITEM_REGULAR),
 
 		list("UTILITIES", -1, null, null, null),

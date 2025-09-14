@@ -46,3 +46,31 @@
 	desc = "A modification of the standard Armat Systems M3 armor, painted with 'selva' camouflage. Hooked up with harnesses and straps allowing the user to carry an M56 Smartgun."
 	icon_state = "brazil_heavy"
 	item_state_slots = list(WEAR_JACKET = "brazil_heavy")
+
+//helmet
+
+/obj/item/clothing/head/helmet/marine/veteran/pmc/brazil
+	name = "\improper tactical 'azul' helmet"
+	desc = "A contender for service with the Brazilian Army, it is presently, exclusively, field tested by Weyland-Yutani mercenaries. This configuration lacks the iconic ballistic mask popularized by Soldier of Fortune magazine."
+	icon_state = "fecb_helmet"
+
+/obj/item/clothing/head/helmet/marine/veteran/pmc/sniper/brazil
+	name = "\improper tactical 'azul' sniper helmet"
+	desc = "A helmet worn by PMC Marksmen."
+	icon_state = "fecb_sniper"
+
+/obj/item/clothing/head/helmet/marine/veteran/pmc/gunner/brazil
+	desc = "A contender for service with the Brazilian Army, it is presently, exclusively, field tested by Weyland-Yutani mercenaries. This version features a high-tech sealed ballistic mask capable of providing tactical data via its eye-lenses."
+	icon_state = "heavy_helmet_fecb"
+
+/obj/item/clothing/head/helmet/marine/veteran/pmc/brazil/green
+	name = "\improper tactical 'selva' helmet"
+	icon_state = "fecb_helmet2"
+
+/obj/item/clothing/head/helmet/marine/veteran/pmc/sniper/brazil/green
+	name = "\improper tactical 'selva' sniper helmet"
+	icon_state = "fecb_sniper2"
+
+/obj/item/clothing/head/helmet/marine/veteran/pmc/gunner/brazil/green
+	name = "\improper tactical 'selva' helmet"
+	icon_state = "heavy_helmet_fecb2"

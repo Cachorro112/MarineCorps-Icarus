@@ -127,6 +127,8 @@
 
 /datum/job/marine/medic/ai/pmc
 	title = JOB_PMCPLAT_MEDIC
+	total_positions = 16
+	spawn_positions = 2
 	gear_preset = /datum/equipment_preset/uscm/pmc/med
 	job_options = null
 

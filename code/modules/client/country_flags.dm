@@ -11,6 +11,8 @@
 				origin?.country = geodata["regionName"]
 			else if(geodata["countryCode"] == "CA" && (geodata["regionName"] == "Quebec"))
 				origin?.country = geodata["regionName"]
+			else if(geodata["countryCode"] == "BR")
+				origin?.country = geodata["region"] // Use Brazilian state code instead of country code
 			else
 				origin?.country = geodata["countryCode"]
 			return geodata["countryCode"]
@@ -18,9 +20,12 @@
 		addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(ip2country), ipaddr, origin), 60 SECONDS)
 
 GLOBAL_LIST_INIT(countries, icon_states('icons/flags.dmi'))
+GLOBAL_LIST_INIT(brazilian_states, icon_states('icons/state_flags_br.dmi'))
 
 /proc/country2chaticon(country_code, targets)
-	if(GLOB.countries.Find(country_code))
+	if(GLOB.brazilian_states.Find(country_code))
+		return "[icon2html('icons/state_flags_br.dmi', targets, country_code)]"
+	else if(GLOB.countries.Find(country_code))
 		return "[icon2html('icons/flags.dmi', targets, country_code)]"
 	else
 		return "[icon2html('icons/flags.dmi', targets, "unknown")]"

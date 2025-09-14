@@ -82,7 +82,7 @@
 
 /datum/job/marine/tl/ai/pmc
 	title = JOB_PMCPLAT_FTL
-	total_positions = 1
+	total_positions = 5
 	spawn_positions = 1
 	gear_preset = /datum/equipment_preset/uscm/pmc/tl
 	job_options = null

@@ -27,13 +27,13 @@ SUBSYSTEM_DEF(statpanels)
 		if(SSmapping.next_map_configs)
 			cached = SSmapping.next_map_configs[GROUND_MAP]
 		global_data = list(
-			"Map: [SSmapping.configs?[GROUND_MAP]?.map_name || "Loading..."]",
-			cached ? "Next Map: [cached?.map_name]" : null,
-			"Round ID: [GLOB.round_id ? GLOB.round_id : "NULL"]",
+			"Mapa: [SSmapping.configs?[GROUND_MAP]?.map_name || "Loading..."]",
+			cached ? "Próximo Mapa: [cached?.map_name]" : null,
+			"ID da Rodada: [GLOB.round_id ? GLOB.round_id : "NULL"]",
 //   "Round Time: [ROUND_TIME]",
-			"Server Time: [time2text(world.timeofday, "YYYY-MM-DD hh:mm:ss")]",
-			"Round Time: [duration2text()]",
-			"Operation Time: [worldtime2text()]",
+			"Horário do Servidor: [time2text(world.timeofday, "YYYY-MM-DD hh:mm:ss")]",
+			"Tempo de Rodada: [duration2text()]",
+			"Tempo de Operação: [worldtime2text()]",
 		)
 
 		src.currentrun = GLOB.clients.Copy()

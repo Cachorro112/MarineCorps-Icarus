@@ -26,28 +26,28 @@
 /datum/emote/living/carbon/human/blink
 	key = "blink"
 	key_third_person = "blinks"
-	message = "blinks."
+	message = "pisca."
 
 /datum/emote/living/carbon/human/blink_rapid
 	key = "rapidblink"
-	message = "blinks rapidly."
+	message = "pisca rapidamente."
 
 /datum/emote/living/carbon/human/bow
 	key = "bow"
 	key_third_person = "bows"
-	message = "bows."
-	message_param = "bows to %t."
+	message = "se curva."
+	message_param = "se curva para %t."
 
 /datum/emote/living/carbon/human/chuckle
 	key = "chuckle"
 	key_third_person = "chuckles"
-	message = "chuckles."
+	message = "ri baixinho."
 	emote_type = EMOTE_AUDIBLE
 
 /datum/emote/living/carbon/human/clap
 	key = "clap"
 	key_third_person = "claps"
-	message = "claps."
+	message = "bate palmas."
 	hands_use_check = TRUE
 	audio_cooldown = 5 SECONDS
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
@@ -56,7 +56,7 @@
 /datum/emote/living/carbon/human/collapse
 	key = "collapse"
 	key_third_person = "collapses"
-	message = "collapses!"
+	message = "desaba!"
 
 /datum/emote/living/carbon/human/collapse/run_emote(mob/user, params, type_override, intentional)
 	. = ..()
@@ -65,26 +65,26 @@
 /datum/emote/living/carbon/human/cough
 	key = "cough"
 	key_third_person = "coughs"
-	message = "coughs!"
+	message = "tosse!"
 
 /datum/emote/living/carbon/human/cry
 	key = "cry"
 	key_third_person = "cries"
-	message = "cries."
+	message = "chora."
 
 /datum/emote/living/carbon/human/eyebrow
 	key = "eyebrow"
-	message = "raises an eyebrow."
+	message = "levanta uma sobrancelha."
 
 /datum/emote/living/carbon/human/facepalm
 	key = "facepalm"
 	key_third_person = "facepalms"
-	message = "facepalms."
+	message = "põe a mão na testa."
 
 /datum/emote/living/carbon/human/faint
 	key = "faint"
 	key_third_person = "faints"
-	message = "faints!"
+	message = "desmaia!"
 
 /datum/emote/living/carbon/human/faint/run_emote(mob/living/carbon/human/user, params, type_override, intentional)
 	. = ..()
@@ -93,30 +93,30 @@
 /datum/emote/living/carbon/human/frown
 	key = "frown"
 	key_third_person = "frowns"
-	message = "frowns."
+	message = "franze a testa."
 
 /datum/emote/living/carbon/human/gasp
 	key = "gasp"
 	key_third_person = "gasps"
-	message = "gasps!"
+	message = "suspira!"
 
 /datum/emote/living/carbon/human/giggle
 	key = "giggle"
 	key_third_person = "giggles"
-	message = "giggles."
+	message = "ri."
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
 
 /datum/emote/living/carbon/human/glare
 	key = "glare"
 	key_third_person = "glares"
-	message = "glares."
-	message_param = "glares at %t."
+	message = "olha fixamente."
+	message_param = "olha fixamente para %t."
 
 /datum/emote/living/carbon/human/golfclap
 	key = "golfclap"
 	key_third_person = "golfclaps"
-	message = "claps, clearly unimpressed."
-	alt_message = "claps"
+	message = "bate palmas, claramente sem impressionar-se."
+	alt_message = "bate palmas"
 	sound = 'sound/misc/golfclap.ogg'
 	cooldown = 5 SECONDS
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
@@ -124,33 +124,33 @@
 /datum/emote/living/carbon/human/grin
 	key = "grin"
 	key_third_person = "grins"
-	message = "grins."
+	message = "sorri amplamente."
 
 /datum/emote/living/carbon/human/grumble
 	key = "grumble"
 	key_third_person = "grumbles"
-	message = "grumbles."
+	message = "resmunga."
 
 /datum/emote/living/carbon/human/handshake
 	key = "handshake"
-	message_param = "shakes hands with %t."
+	message_param = "aperta as mãos com %t."
 
 /datum/emote/living/carbon/human/laugh
 	key = "laugh"
 	key_third_person = "laughs"
-	message = "laughs!"
+	message = "ri!"
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
 
 /datum/emote/living/carbon/human/look
 	key = "look"
 	key_third_person = "looks"
-	message = "looks."
-	message_param = "looks at %t."
+	message = "olha."
+	message_param = "olha para %t."
 
 /datum/emote/living/carbon/human/medic
 	key = "medic"
-	message = "calls for a Corpsman!"
-	alt_message = "shouts something"
+	message = "chama por um Médico!"
+	alt_message = "grita algo"
 	cooldown = 10 SECONDS
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
 
@@ -171,28 +171,28 @@
 	if(!ishuman_strict(user))
 		return
 
-	var/medic_message = pick("Corpsman!", "Doc!", "Help!")
+	var/medic_message = pick("Corpsman!", "Doutor!", "Me Ajuda!")
 	user.langchat_speech(medic_message, group, GLOB.all_languages, skip_language_check = TRUE, animation_style = LANGCHAT_FAST_POP, additional_styles = list("langchat_bolded"))
 
 /datum/emote/living/carbon/human/moan
 	key = "moan"
 	key_third_person = "moans"
-	message = "moans."
+	message = "geme."
 
 /datum/emote/living/carbon/human/mumble
 	key = "mumble"
 	key_third_person = "mumbles"
-	message = "mumbles."
+	message = "murmura."
 
 /datum/emote/living/carbon/human/nod
 	key = "nod"
 	key_third_person = "nods"
-	message = "nods."
+	message = "acena com a cabeça."
 
 /datum/emote/living/carbon/human/pain
 	key = "pain"
-	message = "cries out in pain!"
-	alt_message = "cries out"
+	message = "grita de dor!"
+	alt_message = "grita"
 	species_type_blacklist_typecache = list(/datum/species/synthetic)
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
 
@@ -217,13 +217,13 @@
 	if(!ishuman_strict(user))
 		return
 
-	var/pain_message = pick("OW!!", "AGH!!", "ARGH!!", "OUCH!!", "ACK!!", "OUF!")
+	var/pain_message = pick("OW!!", "AGH!!", "ARGH!!", "AII AIII AIII!!", "ACK!!", "OUF!")
 	user.langchat_speech(pain_message, group, GLOB.all_languages, skip_language_check = TRUE, animation_style = LANGCHAT_FAST_POP, additional_styles = list("langchat_yell"))
 /datum/emote/living/carbon/human/salute
 	key = "salute"
 	key_third_person = "salutes"
-	message = "salutes."
-	message_param = "salutes to %t."
+	message = "faz continência."
+	message_param = "faz continência para %t."
 	sound = 'sound/misc/salute.ogg'
 	audio_cooldown = 10 SECONDS
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
@@ -231,7 +231,7 @@
 /datum/emote/living/carbon/human/scream
 	key = "scream"
 	key_third_person = "screams"
-	message = "screams!"
+	message = "grita!"
 	audio_cooldown = 10 SECONDS
 	species_type_blacklist_typecache = list(/datum/species/synthetic)
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
@@ -256,99 +256,99 @@
 	if(!ishuman_strict(user))
 		return
 
-	var/scream_message = pick("FUCK!!!", "AGH!!!", "ARGH!!!", "AAAA!!!", "HGH!!!", "NGHHH!!!", "NNHH!!!", "SHIT!!!")
+	var/scream_message = pick("MERDA!!!", "AGH!!!", "ARGH!!!", "AAAA!!!", "HGH!!!", "NGHHH!!!", "NNHH!!!", "SHIT!!!")
 	user.langchat_speech(scream_message, group, GLOB.all_languages, skip_language_check = TRUE, animation_style = LANGCHAT_PANIC_POP, additional_styles = list("langchat_yell"))
 
 /datum/emote/living/carbon/human/shakehead
 	key = "shakehead"
-	message = "shakes their head."
+	message = "balança a cabeça."
 
 /datum/emote/living/carbon/human/shiver
 	key = "shiver"
 	key_third_person = "shivers"
-	message = "shivers."
+	message = "treme."
 
 /datum/emote/living/carbon/human/shrug
 	key = "shrug"
 	key_third_person = "shrugs"
-	message = "shrugs."
+	message = "dá de ombros."
 
 /datum/emote/living/carbon/human/sigh
 	key = "sigh"
 	key_third_person = "sighs"
-	message = "sighs."
+	message = "suspira."
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
 
 /datum/emote/living/carbon/human/smile
 	key = "smile"
 	key_third_person = "smiles"
-	message = "smiles."
+	message = "sorri."
 
 /datum/emote/living/carbon/human/sneeze
 	key = "sneeze"
 	key_third_person = "sneezes"
-	message = "sneezes!"
+	message = "espirra!"
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
 
 /datum/emote/living/carbon/human/snore
 	key = "snore"
 	key_third_person = "snores"
-	message = "snores."
+	message = "ronca."
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
 
 /datum/emote/living/carbon/human/stare
 	key = "stare"
 	key_third_person = "stares"
-	message = "stares."
-	message_param = "stares at %t."
+	message = "encara."
+	message_param = "encara %t."
 
 /datum/emote/living/carbon/human/signal
 	key = "signal"
 	key_third_person = "signals"
-	message_param = "raises %t fingers."
+	message_param = "levanta %t dedos."
 	hands_use_check = TRUE
 
 /datum/emote/living/carbon/human/signal/run_emote(mob/user, params, type_override, intentional)
 	params = text2num(params)
 	if(params == 1 || !isnum(params))
-		return "raises one finger."
+		return "levanta um dedo."
 	params = num2text(clamp(params, 2, 10))
 	return ..()
 
 /datum/emote/living/carbon/human/stop
 	key = "stop"
-	message = "holds out an open palm, gesturing to stop."
+	message = "estende a palma da mão aberta, gesticulando para parar."
 	hands_use_check = TRUE
 
 /datum/emote/living/carbon/human/thumbsup
 	key = "thumbsup"
-	message = "gives a thumbs up."
+	message = "faz um sinal de positivo com o polegar."
 	hands_use_check = TRUE
 
 /datum/emote/living/carbon/human/thumbsdown
 	key = "thumbsdown"
-	message = "gives a thumbs down."
+	message = "faz um sinal de negativo com o polegar."
 	hands_use_check = TRUE
 
 /datum/emote/living/carbon/human/twitch
 	key = "twitch"
 	key_third_person = "twitches"
-	message = "twitches."
+	message = "se contorce."
 
 /datum/emote/living/carbon/human/wave
 	key = "wave"
 	key_third_person = "waves"
-	message = "waves."
+	message = "acena."
 
 /datum/emote/living/carbon/human/yawn
 	key = "yawn"
 	key_third_person = "yawns"
-	message = "yawns."
+	message = "boceja."
 
 /datum/emote/living/carbon/human/warcry
 	key = "warcry"
-	message = "shouts an inspiring cry!"
-	alt_message = "shouts something"
+	message = "grita um brado inspirador!"
+	alt_message = "grita algo"
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
 
 /datum/emote/living/carbon/human/warcry/run_emote(mob/living/user, params, type_override, intentional)
@@ -374,12 +374,12 @@
 /datum/emote/living/carbon/human/whimper
 	key = "whimper"
 	key_third_person = "whimpers"
-	message = "whimpers."
+	message = "chora baixinho."
 
 /datum/emote/living/carbon/human/whistle
 	key = "whistle"
 	key_third_person = "whistles"
-	message = "whistles."
+	message = "assobia."
 	emote_type = EMOTE_AUDIBLE
 	sound = "whistle"
 

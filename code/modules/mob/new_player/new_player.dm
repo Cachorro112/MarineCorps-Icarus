@@ -39,31 +39,31 @@
 	var/xeno_text = "[prefix_text]-[tempnumber][postfix_text]"
 	var/round_start = !SSticker || !SSticker.mode || SSticker.current_state <= GAME_STATE_PREGAME
 
-	var/output = "<div align='center'>Welcome,"
+	var/output = "<div align='center'>Bem vindo(a),"
 	output +="<br><b>[(client.prefs && client.prefs.real_name) ? client.prefs.real_name : client.key]</b>"
 	output +="<br><b>[xeno_text]</b>"
 	output += "<p><a href='byond://?src=\ref[src];lobby_choice=tutorial'>Tutorial</A></p>"
-	output += "<p><a href='byond://?src=\ref[src];lobby_choice=show_preferences'>Setup Character</A></p>"
+	output += "<p><a href='byond://?src=\ref[src];lobby_choice=show_preferences'>Configurar Personagem</A></p>"
 
-	output += "<p><a href='byond://?src=\ref[src];lobby_choice=show_playtimes'>View Playtimes</A></p>"
+	output += "<p><a href='byond://?src=\ref[src];lobby_choice=show_playtimes'>Ver Tempo de Jogo</A></p>"
 
 	if(round_start)
-		output += "<p>\[ [ready? "<b>Ready</b>":"<a href='byond://?src=\ref[src];lobby_choice=ready'>Ready</a>"] | [ready? "<a href='byond://?src=\ref[src];lobby_choice=unready'>Not Ready</a>":"<b>Not Ready</b>"] \]</p>"
-		output += "<b>Be Xenomorph:</b> [(client.prefs && (client.prefs.get_job_priority(JOB_XENOMORPH))) ? "Yes" : "No"]"
+		output += "<p>\[ [ready? "<b>Pronto</b>":"<a href='byond://?src=\ref[src];lobby_choice=ready'>Pronto</a>"] | [ready? "<a href='byond://?src=\ref[src];lobby_choice=unready'>Não Pronto</a>":"<b>Não Pronto</b>"] \]</p>"
+		output += "<b>Ser Xenomorfo:</b> [(client.prefs && (client.prefs.get_job_priority(JOB_XENOMORPH))) ? "Sim" : "Não"]"
 
 	else
-		output += "<a href='byond://?src=\ref[src];lobby_choice=manifest'>View the Crew Manifest</A><br><br>"
+		output += "<a href='byond://?src=\ref[src];lobby_choice=manifest'>Ver o Manifesto da Tripulação</A><br><br>"
 /*
 // commented out tutorial due to their lack of relevance/use on pve
 		output += "<a href='byond://?src=\ref[src];lobby_choice=hiveleaders'>View Hive Leaders</A><br><br>"
 */
-		output += "<p><a href='byond://?src=\ref[src];lobby_choice=late_join'>Join the round!</A></p>"
+		output += "<p><a href='byond://?src=\ref[src];lobby_choice=late_join'>Entre na Rodada!</A></p>"
 /*
 		output += "<p><a href='byond://?src=\ref[src];lobby_choice=late_join_xeno'>Join the Hive!</A></p>"
 		if(SSticker.mode.flags_round_type & MODE_PREDATOR)
 			if(SSticker.mode.check_predator_late_join(src,0)) output += "<p><a href='byond://?src=\ref[src];lobby_choice=late_join_pred'>Join the Hunt!</A></p>"
 */
-	output += "<p><a href='byond://?src=\ref[src];lobby_choice=observe'>Observe</A></p>"
+	output += "<p><a href='byond://?src=\ref[src];lobby_choice=observe'>Observar</A></p>"
 
 	output += "</div>"
 	if (refresh)

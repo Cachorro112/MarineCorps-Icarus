@@ -16,6 +16,7 @@ GLOBAL_LIST_INIT(allowed_countries, list(
 			if(!(country_code in GLOB.allowed_countries))
 				log_access("GRINGO ALERT: [key_name(origin)]")
 				to_chat(origin, SPAN_WARNING("You are not on the whitelist. If you are from a Spanish or Portuguese-speaking country, please contact us on our server: https://discord.gg/9bYHjc2N5C"))
+				to_chat(origin, SPAN_WARNING("Você não está na lista de acesso. Se você é de um país de língua espanhola ou portuguesa, entre em contato conosco em nosso servidor: https://discord.gg/9bYHjc2N5C"))
 				del(origin) // it isn't a portuguese or spanish country? kick him
 	else //null response, ratelimited most likely. Try again in 60s
 		addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(check_gringo), ipaddr, origin), 60 SECONDS)

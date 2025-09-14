@@ -114,6 +114,8 @@
 
 /datum/job/marine/standard/ai/pmc
 	title = JOB_PMCPLAT_STANDARD
+	total_positions = 50
+	spawn_positions = 50
 	gear_preset = /datum/equipment_preset/uscm/pmc
 	job_options = null
 

@@ -475,6 +475,14 @@
 	name = "small pmc late join"
 	squad = SQUAD_PMCPLT_SMALL
 
+/obj/effect/landmark/late_join/pmc_mp
+	name = "Internal Security late join"
+	job = JOB_PMCPLAT_MP
+
+/obj/effect/landmark/late_join/pmc_crew
+	name = "Ship Crew late join"
+	job = JOB_PMCPLAT_CREW
+
 /obj/effect/landmark/late_join/Initialize(mapload, ...)
 	. = ..()
 	if(squad)

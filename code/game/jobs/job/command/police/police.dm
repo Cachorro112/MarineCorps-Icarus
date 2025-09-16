@@ -25,7 +25,23 @@
 		total_positions_so_far = positions
 	return positions
 
+/datum/job/command/police/pmc
+	title = JOB_PMCPLAT_MP
+	total_positions = 2
+	spawn_positions = 1
+	allow_additional = 0
+	scaled = 0
+	selection_class = "job_mp"
+	flags_startup_parameters = ROLE_ADD_TO_DEFAULT
+	gear_preset = /datum/equipment_preset/uscm_ship/mp/pmc
+	entry_message_body = "<a href='"+WIKI_PLACEHOLDER+"'>You</a> are held by a higher standard and are required to obey not only the server rules but <a href=>Weyland-Yutani Orders</a>. Failure to do so may result in a job ban or server ban. Your primary job is to maintain peace and stability aboard the ship. Brazilians are often trouble! In addition, you are tasked with the security of high-ranking personnel, including the command staff. Keep them safe!"
+
 /obj/effect/landmark/start/police
 	name = JOB_POLICE
 	icon_state = "mp_spawn"
 	job = /datum/job/command/police
+
+/obj/effect/landmark/start/police/pmc
+	name = JOB_PMCPLAT_MP
+	icon_state = "mp_spawn"
+	job = /datum/job/command/police/pmc

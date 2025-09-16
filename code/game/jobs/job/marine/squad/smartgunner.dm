@@ -124,8 +124,8 @@
 
 /datum/job/marine/smartgunner/ai/pmc
 	title = JOB_PMCPLAT_SG
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 3
+	spawn_positions = 2
 	gear_preset = /datum/equipment_preset/uscm/pmc/sg
 	job_options = null
 

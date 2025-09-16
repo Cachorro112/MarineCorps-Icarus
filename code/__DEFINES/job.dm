@@ -286,6 +286,8 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 #define JOB_PMCPLAT_SG "Heavy Weapons Specialist"
 #define JOB_PMCPLAT_STANDARD "Tactical Unit"
 #define JOB_PMCPLAT_MEDIC "Medical Specialist"
+#define JOB_PMCPLAT_MP "Internal Security (MP)"
+#define JOB_PMCPLAT_CREW "Ship Crew"
 
 ///------ PMC SMALL ==== ///
 #define JOB_PMCPLAT_SMALL_LEADER "Strike Operations Leader"

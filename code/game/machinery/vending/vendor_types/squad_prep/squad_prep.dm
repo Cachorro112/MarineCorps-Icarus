@@ -92,37 +92,73 @@
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad_prep/pmc/populate_product_list(scale)
 	listed_products = list(
 		list("PRIMARY FIREARMS", -1, null, null),
+		list("M49A Battle Rifle", floor(scale * 5), /obj/item/weapon/gun/rifle/m49a, VENDOR_ITEM_REGULAR),
 		list("L42A pulse rifle", floor(scale * 10), /obj/item/weapon/gun/rifle/l42a, VENDOR_ITEM_REGULAR),
+		list("M120 Tactical Shotgun", floor(scale * 10), /obj/item/weapon/gun/shotgun/combat, VENDOR_ITEM_REGULAR),
 		list("M37A2 Pump Shotgun", floor(scale * 15), /obj/item/weapon/gun/shotgun/pump, VENDOR_ITEM_REGULAR),
+		list("NSG 23 Assault Rifle", floor(scale * 20), /obj/item/weapon/gun/rifle/nsg23, VENDOR_ITEM_REGULAR),
+		list("M41A Pulse Rifle MK2", floor(scale * 30), /obj/item/weapon/gun/rifle/m41a, VENDOR_ITEM_RECOMMENDED),
+		list("Viper 9 Submachinegun", floor(scale * 15), /obj/item/weapon/gun/smg/m39/tactical, VENDOR_ITEM_REGULAR),
+		list("M39 Submachine Gun", floor(scale * 20), /obj/item/weapon/gun/smg/m39, VENDOR_ITEM_REGULAR),
 		list("FN FP9000/2 Submachinegun", floor(scale * 30), /obj/item/weapon/gun/smg/fp9000/pmc, VENDOR_ITEM_REGULAR),
-		list("NSG 23 Assault Rifle", floor(scale * 30), /obj/item/weapon/gun/rifle/nsg23, VENDOR_ITEM_RECOMMENDED),
-		list("M41A Pulse Rifle MK2", floor(scale * 5), /obj/item/weapon/gun/rifle/m41a, VENDOR_ITEM_REGULAR),
 
 		list("PRIMARY AMMUNITION", -1, null, null),
 		list("Box of Flechette Shells (12g)", floor(scale * 4), /obj/item/ammo_magazine/shotgun/flechette, VENDOR_ITEM_REGULAR),
 		list("Box of Buckshot Shells (12g)", floor(scale * 10), /obj/item/ammo_magazine/shotgun/buckshot, VENDOR_ITEM_REGULAR),
 		list("Box of Shotgun Slugs (12g)", floor(scale * 10), /obj/item/ammo_magazine/shotgun/slugs, VENDOR_ITEM_REGULAR),
 		list("L42A magazine (10x24mm)", floor(scale * 25), /obj/item/ammo_magazine/rifle/l42a, VENDOR_ITEM_REGULAR),
-		list("L42A extended magazine (10x24mm)", floor(scale * 25), /obj/item/ammo_magazine/rifle/l42a/extended, VENDOR_ITEM_REGULAR),
-		list("FN FP9000 magazine (5.7x28mm)", floor(scale * 35), /obj/item/ammo_magazine/smg/fp9000, VENDOR_ITEM_REGULAR),
+		list("M49A magazine (10x28mm)", floor(scale * 25), /obj/item/ammo_magazine/rifle/m49a, VENDOR_ITEM_REGULAR),
 		list("NSG 23 magazine (10x24mm)", floor(scale * 40), /obj/item/ammo_magazine/rifle/nsg23, VENDOR_ITEM_REGULAR),
-		list("NSG 23 extended magazine (10x24mm)", floor(scale * 30), /obj/item/ammo_magazine/rifle/nsg23/extended, VENDOR_ITEM_REGULAR),
-		list("NSG 23 armor-piercing magazine (10x24mm)", floor(scale * 25), /obj/item/ammo_magazine/rifle/nsg23/ap, VENDOR_ITEM_REGULAR),
 		list("M41A Magazine (10x24mm)", floor(scale * 25), /obj/item/ammo_magazine/rifle, VENDOR_ITEM_REGULAR),
+		list("M39/Viper 9 HV Magazine (10x20mm)", floor(scale * 30), /obj/item/ammo_magazine/smg/m39, VENDOR_ITEM_REGULAR),
+		list("FN FP9000 magazine (5.7x28mm)", floor(scale * 35), /obj/item/ammo_magazine/smg/fp9000, VENDOR_ITEM_REGULAR),
 
 		list("SIDEARMS", -1, null, null),
-		list("VP78 Combat Pistol", round(scale * 2), /obj/item/weapon/gun/pistol/vp78/unloaded, VENDOR_ITEM_REGULAR),
-		list("ES4 Electrostatic Pistol", round(scale * 3), /obj/item/weapon/gun/pistol/es4/unloaded, VENDOR_ITEM_REGULAR),
-		list("Mateba autorevolver", floor(scale * 25), /obj/item/weapon/gun/revolver/mateba, VENDOR_ITEM_REGULAR),
+		list("VP78 Combat Pistol", round(scale * 10), /obj/item/weapon/gun/pistol/vp78, VENDOR_ITEM_REGULAR),
+		list("M48A4 Service Pistol", round(scale * 10), /obj/item/weapon/gun/pistol/m1911/socom, VENDOR_ITEM_REGULAR),
+		list("SU-6 Smart Pistol", floor(scale * 3), /obj/item/storage/box/guncase/smartpistol, VENDOR_ITEM_REGULAR),
+		list("VP70 Combat Pistol", round(scale * 10), /obj/item/weapon/gun/pistol/vp70, VENDOR_ITEM_REGULAR),
+		list("M4A3 Service Pistol", round(scale * 10), /obj/item/weapon/gun/pistol/m4a3, VENDOR_ITEM_REGULAR),
+		list("ES4 Electrostatic Pistol", round(scale * 5), /obj/item/weapon/gun/pistol/es4, VENDOR_ITEM_REGULAR),
+		list("Mateba autorevolver", floor(scale * 5), /obj/item/weapon/gun/revolver/mateba, VENDOR_ITEM_REGULAR),
+		list("M44 Combat Revolver", round(scale * 10), /obj/item/weapon/gun/revolver/m44, VENDOR_ITEM_REGULAR),
 		list("M82F Flare Gun", floor(scale * 10), /obj/item/weapon/gun/flare, VENDOR_ITEM_REGULAR),
 
 		list("SIDEARM AMMUNITION", -1, null, null),
 		list("VP78 magazine (9x19mm)", floor(scale * 25), /obj/item/ammo_magazine/pistol/vp78, VENDOR_ITEM_REGULAR),
+		list("M1911 magazine (.45)", floor(scale * 25), /obj/item/ammo_magazine/pistol/m1911, VENDOR_ITEM_REGULAR),
+		list("SU-6 Smartpistol magazine (.45)", floor(scale * 15), /obj/item/ammo_magazine/pistol/smart, VENDOR_ITEM_REGULAR),
+		list("VP70 Magazine (9x19mm)", floor(scale * 25), /obj/item/ammo_magazine/pistol/vp70, VENDOR_ITEM_REGULAR),
+		list("M4A3 magazine (9x19mm)", floor(scale * 25), /obj/item/ammo_magazine/pistol, VENDOR_ITEM_REGULAR),
 		list("ES-4 stun magazine (9x19mm)", floor(scale * 25), /obj/item/ammo_magazine/pistol/es4, VENDOR_ITEM_REGULAR),
-		list("Mateba speed loader (.454)", floor(scale * 20), /obj/item/ammo_magazine/revolver/mateba, VENDOR_ITEM_REGULAR),
+		list("Mateba speed loader (.454)", floor(scale * 15), /obj/item/ammo_magazine/revolver/mateba, VENDOR_ITEM_REGULAR),
+		list("M44 speed loader (.44)", floor(scale * 20), /obj/item/ammo_magazine/revolver, VENDOR_ITEM_REGULAR),
+
+		list("RESTRICTED FIREARMS", -1, null, null),
+		list("MOU-53 Shotgun", floor(scale * 2), /obj/item/storage/box/guncase/mou53, VENDOR_ITEM_REGULAR),
+		list("XM88 Heavy Rifle", floor(scale * 3), /obj/item/storage/box/guncase/xm88, VENDOR_ITEM_REGULAR),
+		list("M41AE2 Heavy Pulse Rifle", 2, /obj/item/storage/box/guncase/lmg, VENDOR_ITEM_REGULAR),
+		list("M41A Pulse Rifle MK1", floor(scale * 3), /obj/item/storage/box/guncase/m41aMK1, VENDOR_ITEM_REGULAR),
+		list("M56D Heavy Machine Gun", floor(scale * 2), /obj/item/storage/box/guncase/m56d, VENDOR_ITEM_REGULAR),
+		list("M240 Incinerator Unit", floor(scale * 2), /obj/item/storage/box/guncase/flamer, VENDOR_ITEM_REGULAR),
+		list("M79 Grenade Launcher", floor(scale * 3), /obj/item/storage/box/guncase/m79, VENDOR_ITEM_REGULAR),
+		list("XM51 Breaching Scattergun", floor(scale * 3), /obj/item/storage/box/guncase/xm51, VENDOR_ITEM_REGULAR),
+
+		list("EXPLOSIVES", -1, null, null),
+		list("M15 Fragmentation Grenade", floor(scale * 2), /obj/item/explosive/grenade/high_explosive/m15, VENDOR_ITEM_REGULAR),
+		list("M20A2P Claymore anti-personnel mine", floor(scale * 4), /obj/item/explosive/mine/pmc/strong, VENDOR_ITEM_REGULAR),
+		list("M40 HEDP Grenade", floor(scale * 25), /obj/item/explosive/grenade/high_explosive, VENDOR_ITEM_REGULAR),
+		list("M40 HIDP Incendiary Grenade", floor(scale * 4), /obj/item/explosive/grenade/incendiary, VENDOR_ITEM_REGULAR),
+		list("M40 CCDP Chemical Compound Smoke Grenade", floor(scale * 4), /obj/item/explosive/grenade/phosphorus, VENDOR_ITEM_REGULAR),
+		list("M74 AGM-Star Shell", floor(scale * 2), /obj/item/explosive/grenade/high_explosive/airburst/starshell, VENDOR_ITEM_REGULAR),
+		list("M74 AGM-Hornet Shell", floor(scale * 4), /obj/item/explosive/grenade/high_explosive/airburst/hornet_shell, VENDOR_ITEM_REGULAR),
+		list("G2 Electroshock Grenade", round(scale * 5), /obj/item/explosive/grenade/sebb, VENDOR_ITEM_REGULAR),
+		list("M40 HIRR Baton Slug", floor(scale * 8), /obj/item/explosive/grenade/slug/baton, VENDOR_ITEM_REGULAR),
+		list("M40 MFHS Metal Foam Grenade", floor(scale * 6), /obj/item/explosive/grenade/metal_foam, VENDOR_ITEM_REGULAR),
+		list("Plastic Explosives", floor(scale * 5), /obj/item/explosive/plastic, VENDOR_ITEM_REGULAR),
+		list("Breaching Charge", floor(scale * 5), /obj/item/explosive/plastic/breaching_charge, VENDOR_ITEM_REGULAR),
 
 		list("ATTACHMENTS", -1, null, null),
-		list("NSG 23 stock", floor(scale * 10), /obj/item/attachable/stock/nsg23, VENDOR_ITEM_REGULAR),
 		list("Rail Flashlight", floor(scale * 25), /obj/item/attachable/flashlight, VENDOR_ITEM_RECOMMENDED),
 		list("Underbarrel Flashlight Grip", floor(scale * 10), /obj/item/attachable/flashlight/grip, VENDOR_ITEM_RECOMMENDED),
 		list("Underslung Grenade Launcher", floor(scale * 25), /obj/item/attachable/attached_gun/grenade, VENDOR_ITEM_REGULAR),
@@ -142,28 +178,55 @@
 
 /obj/structure/machinery/cm_vending/sorted/cargo_ammo/squad/pmc/populate_product_list(scale)
 	listed_products = list(
+		list("PRIMARY AMMUNITION", -1, null, null),
+		list("Box of Flechette Shells (12g)", floor(scale * 10), /obj/item/ammo_magazine/shotgun/flechette, VENDOR_ITEM_REGULAR),
+		list("Box of Buckshot Shells (12g)", floor(scale * 20), /obj/item/ammo_magazine/shotgun/buckshot, VENDOR_ITEM_REGULAR),
+		list("Box of Shotgun Slugs (12g)", floor(scale * 20), /obj/item/ammo_magazine/shotgun/slugs, VENDOR_ITEM_REGULAR),
+		list("L42A magazine (10x24mm)", floor(scale * 35), /obj/item/ammo_magazine/rifle/l42a, VENDOR_ITEM_REGULAR),
+		list("M49A magazine (10x28mm)", floor(scale * 25), /obj/item/ammo_magazine/rifle/m49a, VENDOR_ITEM_REGULAR),
+		list("FN FP9000 magazine (5.7x28mm)", floor(scale * 35), /obj/item/ammo_magazine/smg/fp9000, VENDOR_ITEM_REGULAR),
+		list("NSG 23 magazine (10x24mm)", floor(scale * 40), /obj/item/ammo_magazine/rifle/nsg23, VENDOR_ITEM_REGULAR),
+		list("M41A Magazine (10x24mm)", floor(scale * 30), /obj/item/ammo_magazine/rifle, VENDOR_ITEM_REGULAR),
+		list("M39/Viper 9 HV Magazine (9mm)", floor(scale * 30), /obj/item/ammo_magazine/smg/m39, VENDOR_ITEM_REGULAR),
+
+		list("SIDEARM AMMUNITION", -1, null, null),
+		list("VP78 magazine (9x19mm)", floor(scale * 25), /obj/item/ammo_magazine/pistol/vp78, VENDOR_ITEM_REGULAR),
+		list("M1911 magazine (.45)", floor(scale * 25), /obj/item/ammo_magazine/pistol/m1911, VENDOR_ITEM_REGULAR),
+		list("SU-6 Smartpistol magazine (.45)", floor(scale * 15), /obj/item/ammo_magazine/pistol/smart, VENDOR_ITEM_REGULAR),
+		list("VP70 Magazine (9x19mm)", floor(scale * 25), /obj/item/ammo_magazine/pistol/vp70, VENDOR_ITEM_REGULAR),
+		list("M4A3 magazine (9x19mm)", floor(scale * 25), /obj/item/ammo_magazine/pistol, VENDOR_ITEM_REGULAR),
+		list("ES-4 stun magazine (9x19mm)", floor(scale * 25), /obj/item/ammo_magazine/pistol/es4, VENDOR_ITEM_REGULAR),
+		list("Mateba speed loader (.454)", floor(scale * 15), /obj/item/ammo_magazine/revolver/mateba, VENDOR_ITEM_REGULAR),
+		list("M44 speed loader (.44)", floor(scale * 20), /obj/item/ammo_magazine/revolver, VENDOR_ITEM_REGULAR),
+
 		list("ARMOR-PIERCING AMMUNITION", -1, null, null),
-		list("L42A AP magazine (10x24mm)", 3.5, /obj/item/ammo_magazine/rifle/l42a/ap, VENDOR_ITEM_REGULAR),
-		list("NSG 23 armor-piercing magazine (10x24mm)", floor(scale * 3), /obj/item/ammo_magazine/rifle/ap, VENDOR_ITEM_REGULAR),
+		list("L42A AP magazine (10x24mm)", floor(scale * 10), /obj/item/ammo_magazine/rifle/l42a/ap, VENDOR_ITEM_REGULAR),
+		list("M49A armor-piercing magazine (10x28mm)", floor(scale * 10), /obj/item/ammo_magazine/rifle/m49a/ap, VENDOR_ITEM_REGULAR),
+		list("NSG 23 armor-piercing magazine (10x24mm)", floor(scale * 10), /obj/item/ammo_magazine/rifle/nsg23/ap, VENDOR_ITEM_REGULAR),
+		list("M41A AP magazine (10x24mm)", floor(scale * 10), /obj/item/ammo_magazine/rifle/ap, VENDOR_ITEM_REGULAR),
+		list("M39/Viper 9 AP Magazine (9mm)", floor(scale * 10), /obj/item/ammo_magazine/smg/m39/ap, VENDOR_ITEM_REGULAR),
 
 		list("EXTENDED AMMUNITION", -1, null, null),
-		list("M39 Extended Magazine (10x20mm)", 1.8, /obj/item/ammo_magazine/smg/m39/extended, VENDOR_ITEM_REGULAR),
-		list("NSG 23 extended magazine (10x24mm)", floor(scale * 30), /obj/item/ammo_magazine/rifle/nsg23/extended, VENDOR_ITEM_REGULAR),
+		list("L42A extended magazine (10x24mm)", floor(scale * 15), /obj/item/ammo_magazine/rifle/l42a/extended, VENDOR_ITEM_REGULAR),
+		list("M49A extended magazine (10x28mm)", floor(scale * 15), /obj/item/ammo_magazine/rifle/m49a/ext, VENDOR_ITEM_REGULAR),
+		list("NSG 23 extended magazine (10x24mm)", floor(scale * 20), /obj/item/ammo_magazine/rifle/nsg23/extended, VENDOR_ITEM_REGULAR),
+		list("M41A extended magazine (10x24mm)", floor(scale * 20), /obj/item/ammo_magazine/rifle/extended, VENDOR_ITEM_REGULAR),
+		list("M39/Viper 9 extended magazine (9mm)", floor(scale * 20), /obj/item/ammo_magazine/smg/m39/extended, VENDOR_ITEM_REGULAR),
 
 		list("SPECIAL AMMUNITION", -1, null, null),
-		list("M56 Smartgun Drum", 1, /obj/item/ammo_magazine/smartgun, VENDOR_ITEM_REGULAR),
-		list("High Impact Mateba speed loader (.454)", floor(scale * 2), /obj/item/ammo_magazine/revolver/mateba/highimpact, VENDOR_ITEM_REGULAR),
-		list("High Impact Armor-Piercing Mateba speed loader (.454)", floor(scale * 2), /obj/item/ammo_magazine/revolver/mateba/highimpact/ap, VENDOR_ITEM_REGULAR),
+		list("M56 Smartgun Drum", floor(scale * 30), /obj/item/ammo_magazine/smartgun, VENDOR_ITEM_REGULAR),
+		list("High Impact Mateba speed loader (.454)", floor(scale * 10), /obj/item/ammo_magazine/revolver/mateba/highimpact, VENDOR_ITEM_REGULAR),
+		list("High Impact Armor-Piercing Mateba speed loader (.454)", floor(scale * 10), /obj/item/ammo_magazine/revolver/mateba/highimpact/ap, VENDOR_ITEM_REGULAR),
 
 		list("RESTRICTED FIREARM AMMUNITION", -1, null, null),
-		list("VP78 Magazine", floor(scale * 5), /obj/item/ammo_magazine/pistol/vp78, VENDOR_ITEM_REGULAR),
-		list("SU-6 Smartpistol Magazine (.45)", floor(scale * 5), /obj/item/ammo_magazine/pistol/smart, VENDOR_ITEM_REGULAR),
-		list("M240 Incinerator Tank", floor(scale * 3), /obj/item/ammo_magazine/flamer_tank, VENDOR_ITEM_REGULAR),
-		list("M56D Drum Magazine", floor(scale * 2), /obj/item/ammo_magazine/m56d, VENDOR_ITEM_REGULAR),
-		list("M2C Box Magazine", floor(scale * 2), /obj/item/ammo_magazine/m2c, VENDOR_ITEM_REGULAR),
-		list("HIRR Baton Slugs", floor(scale * 6), /obj/item/explosive/grenade/slug/baton, VENDOR_ITEM_REGULAR),
-		list("M74 AGM-S Star Shell", floor(scale * 4), /obj/item/explosive/grenade/high_explosive/airburst/starshell, VENDOR_ITEM_REGULAR),
-		list("M74 AGM-S Hornet Shell", floor(scale * 4), /obj/item/explosive/grenade/high_explosive/airburst/hornet_shell, VENDOR_ITEM_REGULAR),
+		list("VP78 Magazine", floor(scale * 15), /obj/item/ammo_magazine/pistol/vp78, VENDOR_ITEM_REGULAR),
+		list("SU-6 Smartpistol Magazine (.45)", floor(scale * 15), /obj/item/ammo_magazine/pistol/smart, VENDOR_ITEM_REGULAR),
+		list("M240 Incinerator Tank", floor(scale * 7), /obj/item/ammo_magazine/flamer_tank, VENDOR_ITEM_REGULAR),
+		list("M56D Drum Magazine", floor(scale * 10), /obj/item/ammo_magazine/m56d, VENDOR_ITEM_REGULAR),
+		list("M2C Box Magazine", floor(scale * 7), /obj/item/ammo_magazine/m2c, VENDOR_ITEM_REGULAR),
+		list("HIRR Baton Slugs", floor(scale * 5), /obj/item/explosive/grenade/slug/baton, VENDOR_ITEM_REGULAR),
+		list("M74 AGM-S Star Shell", floor(scale * 12), /obj/item/explosive/grenade/high_explosive/airburst/starshell, VENDOR_ITEM_REGULAR),
+		list("M74 AGM-S Hornet Shell", floor(scale * 12), /obj/item/explosive/grenade/high_explosive/airburst/hornet_shell, VENDOR_ITEM_REGULAR),
 		)
 //------------SQUAD PREP UNIFORM VENDOR---------------
 
@@ -1051,16 +1114,23 @@
 		)
 
 
+//////// SE ALGUM INFELIZ RETARDADO PEGAR MAIS DE UM KIT E FICAR DROPANDO PELA ARMORY VAI SER GIBADO
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/pmc/smartgunner
 	name = "\improper PMC Squad Support Weapons Gear Rack"
 	desc = "An automated gear rack for Squad Support Weapons Specialist."
-	req_access = list(ACCESS_WY_GENERAL)
+	req_access = list(ACCESS_PMC_GUNNER)
 	req_one_access = list()
 
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/pmc/smartgunner/populate_product_list(scale)
 	listed_products = list(
-		list("SMARTGUN SET (MANDATORY)", -1, null, null, null),
-		list("Essential Smartgunner Set", 10, /obj/item/storage/box/m56_dirty_system, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_MANDATORY),
+		list("KIT (MANDATORY)", -1, null, null, null),
+		list("Essential Smartgunner Set", 10, /obj/item/storage/box/m56_dirty_system, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_RECOMMENDED),
+		list("Rocketeer Set", 2, /obj/item/storage/box/spec/rocketeer, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_REGULAR),
+		list("Heavy Grenadier Set", 2, /obj/item/storage/box/spec/heavy_grenadier, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_REGULAR),
+		list("Pyro Set", 2, /obj/item/storage/box/spec/pyro, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_REGULAR),
+		list("Scout-Sniper (Spotter) Set", 2, /obj/item/storage/box/spec/spotter, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_REGULAR),
+		list("Scout-Sniper (Shooter)", 2, /obj/item/storage/box/spec/sniper, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_REGULAR),
+		list("Scout-Sniper (Anti-Materiel Shooter)", 2, /obj/item/storage/box/spec/sniper/anti_materiel, MARINE_CAN_BUY_ESSENTIALS,),
 
 		list("GUN ATTACHMENTS (CHOOSE 1)", -1, null, null, null),
 		list("Laser Sight", 10, /obj/item/attachable/lasersight, VENDOR_ITEM_REGULAR),
@@ -1116,13 +1186,19 @@
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/pmc/smartgunner/brazil
 	name = "\improper FECB Squad Support Weapons Gear Rack"
 	desc = "An automated gear rack for FECB Squad Support Weapons Specialist."
-	req_access = list(ACCESS_WY_GENERAL)
+	req_access = list(ACCESS_PMC_GUNNER)
 	req_one_access = list()
 
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/pmc/smartgunner/brazil/populate_product_list(scale)
 	listed_products = list(
-		list("SMARTGUN SET (MANDATORY)", -1, null, null, null),
+		list("KIT (MANDATORY)", -1, null, null, null),
 		list("Essential Smartgunner Set", 10, /obj/item/storage/box/m56_dirty_system, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_MANDATORY),
+		list("Rocketeer Set", 2, /obj/item/storage/box/spec/rocketeer, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_REGULAR),
+		list("Heavy Grenadier Set", 2, /obj/item/storage/box/spec/heavy_grenadier, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_REGULAR),
+		list("Pyro Set", 2, /obj/item/storage/box/spec/pyro, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_REGULAR),
+		list("Scout-Sniper (Spotter) Set", 2, /obj/item/storage/box/spec/spotter, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_REGULAR),
+		list("Scout-Sniper (Shooter)", 2, /obj/item/storage/box/spec/sniper, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_REGULAR),
+		list("Scout-Sniper (Anti-Materiel Shooter)", 2, /obj/item/storage/box/spec/sniper/anti_materiel, MARINE_CAN_BUY_ESSENTIALS,),
 
 		list("GUN ATTACHMENTS (CHOOSE 1)", -1, null, null, null),
 		list("Laser Sight", 10, /obj/item/attachable/lasersight, VENDOR_ITEM_REGULAR),

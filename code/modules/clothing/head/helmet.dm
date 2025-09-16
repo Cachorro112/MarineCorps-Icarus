@@ -1054,6 +1054,11 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	desc = "The pinnacle of fashion for any aspiring mercenary leader. Designed to protect the head from light impacts."
 	icon_state = "officer_hat"
 
+/obj/item/clothing/head/helmet/marine/veteran/pmc/mp
+	name = "\improper PMC Internal Security helmet"
+	desc = "A contender for service with the Royal Marine Commandos, it is presently, exclusively, field tested by Weyland-Yutani mercenaries. Whether you're facing a workers union or a mutiny, this bucket will keep your brains intact."
+	icon_state = "pmc_mp"
+
 /obj/item/clothing/head/helmet/marine/veteran/pmc/sniper
 	name = "\improper tactical sniper helmet"
 	desc = "A helmet worn by PMC Marksmen."
